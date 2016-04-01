@@ -2,7 +2,7 @@
 var path = require( "path" );
 var dir = path.basename( __dirname ); // directory this file is in
 
-require( "babel-register", {
+require( "babel-register" )( {
 	ignore: false,
 	only: new RegExp( path.join( dir, "src" ) )
 } );
